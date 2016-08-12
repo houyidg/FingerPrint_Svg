@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fingerAnim="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    >
+  <com.swir.fingerprint.view.FingerPrintView
+      android:id="@+id/swirl"
+      android:layout_width="120dp"
+      android:layout_height="120dp"
+      fingerAnim:swirl_state="mDefault"
+      />
+  <RadioGroup
+      android:id="@+id/state"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="120dp"
+      android:checkedButton="@+id/defaults"
+      android:orientation="horizontal"
+      >
+    <RadioButton
+        android:id="@+id/defaults"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:text="Default"
+        />
+    <RadioButton
+        android:id="@+id/success"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="32dp"
+        android:text="Success"
+        />
+    <RadioButton
+        android:id="@+id/fail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fail"
+        />
+  </RadioGroup>
+</LinearLayout>

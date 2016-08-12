@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <attr name="swirl_successColor" format="reference|color"/>
+  <attr name="swirl_failColor" format="reference|color"/>
+  <attr name="swirl_defaultColor" format="reference|color"/>
+
+  <declare-styleable name="swirl_Swirl">
+    <!-- Keep in sync with State enum. -->
+    <attr name="swirl_state" format="enum">
+      <enum name="mDefault" value="0"/>
+      <enum name="mSuccess" value="1"/>
+      <enum name="mFail" value="2"/>
+    </attr>
+  </declare-styleable>
+</resources>
